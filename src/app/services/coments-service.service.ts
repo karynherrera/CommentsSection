@@ -12,7 +12,8 @@ export class ComentsServiceService {
   commentsCollection: AngularFirestoreCollection<commentInterface>;
   coment: Observable<commentInterface[]>;
   comentsDoc: AngularFirestoreDocument<commentInterface>;
-  counter: number;
+  bandera: string[];
+  id: string;
 
   constructor(public afs: AngularFirestore) { 
     this.commentsCollection = afs.collection<commentInterface>('comentarios');//aca indicmos el nombre de la coleccion
@@ -21,6 +22,8 @@ export class ComentsServiceService {
       map(post => post.map(texto => {
         const datos = texto.payload.doc.data() as commentInterface;
         const id = texto.payload.doc.id;
+        console.log(id);
+        //this.bandera.push(id);
         return { id, ...datos };
       }
       ))

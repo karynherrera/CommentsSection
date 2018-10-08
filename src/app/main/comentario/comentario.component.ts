@@ -8,11 +8,15 @@ import {ComentsServiceService} from '../../services/coments-service.service';
   styleUrls: ['./comentario.component.css']
 })
 export class ComentarioComponent implements OnInit {
-  
+  comentarios: commentInterface[];
 
   constructor(public commentServ:ComentsServiceService) { }
 
   ngOnInit() {
+    this.commentServ.getComments().subscribe(publicacion=>{
+      console.log(publicacion);
+      this.comentarios = publicacion;
+      })
   }
   delete(event, coment: commentInterface){
     this.commentServ.deleteComment(coment);

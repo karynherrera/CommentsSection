@@ -25,6 +25,7 @@ export class AddCommentComponent implements OnInit {
         let time = new Date().getTime();
         let date = new Date(time).toLocaleString();
         this.Comment.fecha = date;
+        
         this.comentServ.addComment(this.Comment); 
   }
 }
