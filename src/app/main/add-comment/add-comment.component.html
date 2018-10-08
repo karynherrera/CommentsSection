@@ -1,6 +1,4 @@
-<form > 
-    <div class='formUser'>
-      <input  class="inputPub" type='text' name ="publish" id="publish" placeholder="¿Agrega tu comentario!?">
-    <button mat-button type="submit" class='publicar'>Publicar!</button>
-    </div>
+<form (ngSubmit)="newComment(formNew)" #formNew="ngForm" > 
+    <input [(ngModel)]="Comment.comentario" #commentario="ngModel" type='text' name ="comentario" placeholder="Ingresa tu Comentario">
+    <button mat-button type="submit" class='publicar'>Enviar Comentario</button>
   </form>

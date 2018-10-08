@@ -27,3 +27,11 @@ input[placeholder] {
   font-size: 20px;
   color: #2980b9;
 }
+
+.mat-button{
+  position: relative;
+  text-align: left;
+  background-color: #2980b9;
+  color:white;
+  margin: 1%;
+}
