@@ -1,27 +1,20 @@
-# CommentsSection
+# :speech_balloon: Desafío Silicon Valley: Sección de Comentarios
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+El desafio consiste en crear una interfaz web que represente la sección de comentarios de una plataforma, con
+las siguientes historias de usuario:
 
-## Development server
+● Como usuario, me gustaría poder agregar un comentario, así puedo expresar las cosas que pienso.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+● Como usuario, me gustaría ver una lista de comentarios anteriores, así puedo revisar lo que escribir anteriormente.
 
-## Code scaffolding
+● Como usuario, me gustaría poder eliminar un comentario, así puedo tener control sobre lo que escribo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+##  :computer: Implementación  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Para implementar lo requerido realizé una interfaz de usuario tipo red social, para que sea más intuitiva y amigable al usuario. Para el desarrollo usé Angular 6 y Firebase Firestore, ya que al realizarlo por componentes es facilmente escalable a otros proyectos si es necesario.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_Link directo al demo_
+[Seccion de Comentarios](https://commentsection-30153.firebaseapp.com/)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

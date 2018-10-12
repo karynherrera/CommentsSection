@@ -11,7 +11,6 @@ import {NgForm} from '@angular/forms/src/directives/ng_form';
 export class AddCommentComponent implements OnInit {
 
   Comment: commentInterface = {
-    id: '',
     fecha:'',
     comentario:'',
   }
